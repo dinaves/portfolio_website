@@ -1,0 +1,154 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.container {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add to or update your existing style.css content */
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.badges img {
+    height: 25px; /* Adjust size as needed */
+    margin-right: 5px;
+}
+
+.project-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project-card img {
+    width: 50%; /* Adjust based on your preference */
+    height: auto;
+    border-radius: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 2px 8px;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+footer {
+    margin-top: 2rem; /* Ensure footer is at the bottom */
+    position: relative; /* Update based on layout needs */
+}
+
+.about-me-content {
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+}
+
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px; /* Adds some space between the image and the text */
+}
+
+.about-me-text {
+    flex: 1; /* Causes the text container to fill up the remaining space */
+}
+
+.resume-text {
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Or specify a fixed width, e.g., 500px */
+    height: auto; /* Or specify a fixed height, e.g., 200px */
+    font-family:'Tahoma'; /* Pleasant, readable font */
+    color: #333; /* Dark gray color for text */
+    line-height: 1.6; /* Enhances line spacing for readability */
+    font-size: 16px; /* Adjust based on preference */
+    text-align: justify; /* Justifies the text for a clean, aligned appearance */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    margin-bottom: 20px; /* Adds space below the text box */
+}
+
+
+/* Style for contact logos */
+.contact-logos {
+    display: flex; /* This will place all child elements side-by-side */
+    justify-content: start; /* Align items to the start of the container */
+}
+
+.logo {
+    display: inline-block; /* Ensures the image behaves as an inline block element */
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Adds spacing around the logos */
+}
+
+
+
+
