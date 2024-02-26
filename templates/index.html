@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <!-- <li><a href="/about">About Me</a></li> -->
+            <!-- <li><a href="/projects">Projects</a></li> -->
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="about-me-content">
+                <img src="{{ url_for('static', filename='your-picture.jpg') }}" alt="Your Picture" class="profile-pic">
+                <div class="about-me-text">
+                    <div class="resume-text">
+                        Data Engineer with expertise in ETL processes, cloud computing (AWS), and analytics. Proficient in Python, SQL for complex data analysis, and visualization tools like Power BI and QuickSight. Experienced in developing predictive models, NLP, and handling large datasets for insightful decision-making. Results-driven with a focus on efficiency.
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="badges">
+                <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="Cloud Computing">
+                <img src="https://img.shields.io/badge/Python-4B8BBE?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                <img src="https://img.shields.io/badge/SQL-00758F?style=for-the-badge&logo=amazon-dynamodb&logoColor=white" alt="SQL">
+            </div>
+        </section>
+        
+        <!-- Relevant Projects Section -->
+        <section id="projects">
+            <h2>Relevant Projects</h2>
+            <div class="project-card">
+                <h3>Project Name 1</h3>
+                <p><span class="tag">Python</span> <span class="tag">SQL</span></p>
+                <p>A brief description of the project.</p>
+                <img src="{{ url_for('static', filename='aws_etl.png') }}" alt="Project 1">
+            </div>
+            <!-- Repeat for other projects -->
+        </section>
+        
+        <!-- Contact Me Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-logos"> <!-- Changed class name here for clarity -->
+                <a href="https://www.linkedin.com/in/navesfranco" target="_blank">
+                    <img src="{{ url_for('static', filename='linkedin_logo.png') }}" alt="LinkedIn" class="logo">
+                </a>
+                <a href="https://www.hackerrank.com/navesfranco" target="_blank">
+                    <img src="{{ url_for('static', filename='hacker_rank_logo_squared.png') }}" alt="HackerRank" class="logo">
+                </a>
+            </div>
+        </section>               
+    </div>
+    <footer>
+        <p>Footer Content &copy; 2024</p>
+    </footer>
+</body>
+</html>
